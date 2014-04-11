@@ -1,0 +1,3 @@
+# MyProject
+
+** Playing with Elixir :) **
