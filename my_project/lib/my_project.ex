@@ -1,6 +1,6 @@
 defmodule MyList do
   @doc """
-  Sums all elements of a list
+  Sums all elements of a list.
 
   ## Example
 
@@ -11,7 +11,7 @@ defmodule MyList do
   def sum([head|tail]), do: head + sum(tail)
 
   @doc """
-  Returns the element at given index of a list
+  Returns the element at given index of a list.
   If index is out of bounds, returns nil.
 
   ## Examples
@@ -22,7 +22,7 @@ defmodule MyList do
       iex> MyList.index(4, [1,2,3])
       nil
   """
-  def index(_n, []), do: nil
+  def index(_n, []),          do: nil
   def index(0, [head|_tail]), do: head
   def index(n, [_head|tail]), do: index(n-1, tail)
 end
